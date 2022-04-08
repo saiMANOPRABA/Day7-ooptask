@@ -1,0 +1,88 @@
+//Question no 1:
+
+class Movie{
+constructor(title,studio,rating){
+this.title=title;
+this.studio=studio;
+this.rating=rating;
+}
+}
+ var m1=new Movie("Casino Royale","Eon Productions","PG­13");
+ console.log(m1);
+
+
+
+//Question.no:2
+class circle {
+    constructor (radius,color,area,circumference){
+        this.radius = radius;
+        this.color = color;
+        this.area=area;
+        this.circumference=circumference;
+    }
+getRadius(){
+return this.radius;
+}
+getColor(){
+return this.color;
+}
+getArea(){
+return this.radius*this.area;
+}
+getCircumference(){
+return this.radius*this.circumference;
+}
+}
+var c1 = new circle (1, "red",3.14,6.28);
+console.log(c1.getRadius());
+console.log(c1.getColor());
+console.log(c1.getArea());
+console.log(c1.getCircumference());
+
+
+
+//Question.no:3
+
+class Person{
+constructor(Name,age,gender,mobilenumber){
+this.Name=Name;
+this.age=age;
+this.gender=gender;
+this.mobilenumber= mobilenumber;
+}
+}
+var p1 = new Person("John doe","26","male","3545486432");
+console.log(p1);
+
+
+
+
+//Question.no:4
+
+class Price{
+constructor(distance_in_km,rate,suv,sedan,mini){
+this.distance_in_km = distance_in_km;
+this.rate=rate;
+this.mini=mini;
+this.suv=suv;
+this.sedan=sedan;
+}
+
+getRate_for_suv(){
+return this.rate*this.distance_in_km*this.suv;
+}
+
+getRate_for_sedan(){
+return this.rate*this.distance_in_km*this.sedan;
+}
+
+getRate_for_mini(){
+return this.rate*this.distance_in_km*this.mini;
+}
+}
+
+var p1= new Price("2","12","4","3","2");
+
+console.log(p1.getRate_for_suv());
+console.log(p1.getRate_for_sedan());
+console.log(p1.getRate_for_mini());
